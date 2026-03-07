@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "AI Reading Assistant",
+  "description": "Accessibility reading tool with AI summarization, focus mode, speech, highlighting, and mind mapping.",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>",
+    "https://router.huggingface.co/*"
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Reading Assistant"
+  }
+}
