@@ -1,93 +1,122 @@
-# 👋 Welcome to Hack for Infinity – Infinity 2K26!
+🧠 AI Reading Assistant – NeuroInclusive Web
+👥 Team Members
+Name	                      GitHub Username
+Bhukya Gopi	                Bhukyagopi
+Godari Vennela	            Vennela-go
+Kalvakuntla Sathwika        -
 
-Hey team! 🎉 Welcome to your dedicated repository for the **Infinity 2K26 Hackathon** organized by the **IEEE Computer Society OUCE Student Chapter**.
+❓ Problem Statement
 
-This is your team's space to build, commit, and submit your project. Organizers have access to this repo and will review your **commit history** to verify the project was built during hackathon hours — so make sure you're committing regularly throughout the day!
+Most digital content on the web is designed for the average reader, but not everyone processes text in the same way.
+People with ADHD and Dyslexia often struggle with:
+Large walls of text
+Losing track of reading lines
+Letter confusion (b/d, p/q)
+Distractions from ads and sidebars
+Difficulty extracting key information from long articles
+These challenges make reading online content mentally exhausting and inefficient.
+Our project aims to make the web more accessible and readable for neurodivergent users.
 
-> ⏰ **The repository will be locked at 5:30 PM. No pushes will be accepted after that.**
+🏗️ System Architecture / Design
+The project is implemented as a Chrome Extension that dynamically modifies webpage content.
 
----
+Architecture Flow:
+User
+ ↓
+Chrome Extension Popup
+ ↓
+Content Script Injection
+ ↓
+Webpage DOM Manipulation
+ ↓
+Accessibility Features Applied
 
-## 📅 Quick Schedule
+Components
+Popup Interface
+Provides buttons for different accessibility features.
+Content Script
+Injected into webpages to modify text and layout.
 
-| Time | Activity |
-|------|----------|
-| 8:30 – 9:00 AM | Reporting & registration |
-| 9:00 – 10:00 AM | Opening briefing & kickoff |
-| 10:00 AM – 1:00 PM | Development session |
-| 1:00 – 2:00 PM | Lunch break & **Round 1 evaluation** |
-| 2:00 – 5:30 PM | Development session & final prep |
-| 5:30 – 6:00 PM | **Final judging & presentations** |
+Web APIs
+Used for text-to-speech and webpage manipulation.
 
----
+🛠️ Technologies Used
+Frontend:
+HTML
+CSS
+JavaScript
 
-## ✅ Things to Remember
+Browser Platform
+Chrome Extension API
+Accessibility Tools
+Web Speech API (Text-to-Speech)
 
-- Commit your code **frequently** throughout the day
-- AI tools (ChatGPT, Copilot, etc.) are allowed — but be ready to **explain your code** to the judges
-- Pre-built or plagiarised projects will be **disqualified**
-- Bring your laptops, chargers, and any hardware you need
-- Include a **project document** in this repo (see required sections below)
+Development Tools:
+VS Code
+Git
+GitHub
 
----
+⭐ Key Features
+🧠 Bionic Reading
+----Highlights the first part of each word to create visual anchors and guide eye movement.
 
-## 📋 Judging Criteria
+🎯 Focus Mode
+-----Removes distractions like ads, sidebars, and unnecessary elements from the webpage.
 
-Projects will be evaluated on:
-- 💡 Innovation and originality
-- 🛠️ Technical implementation
-- 🌍 Practical impact and usefulness
-- 🎨 User experience and design
-- 🗣️ Clarity of presentation and explanation
+📑 AI Page Summarizer
+-----Condenses long articles into 5 key bullet points to help users quickly understand the content.
 
----
+📖 Line Highlighter
+-----Highlights one reading line at a time to help users track their reading position.
 
----
+🔊 Read Aloud
+-----Uses text-to-speech to read webpage content aloud for users who prefer listening.
 
-# 📁 Fill This In — Your Project README
+🧾 Sentence Reader
+-----Allows users to read sentence by sentence to reduce cognitive overload.
 
-> ✏️ *Replace everything below this line with your own project details*
+🔢 Highlight Digits
+-----Highlights all numbers on the page for better visibility.
 
----
+🧹 Remove Distractions
+-----Simplifies webpage layout to improve readability.
 
-## 🏷️ Project Title
+⚙️ How It Works
+The user installs the Chrome extension.
+The user opens any webpage.
+The extension popup provides multiple accessibility options.
+When a feature is selected:
+A content script is injected into the webpage
+The script modifies the DOM structure and text formatting
+Accessibility features such as Bionic Reading, Focus Mode, or Text-to-Speech are applied instantly.
+This allows the extension to work on any webpage without modifying the original website code.
 
-*Your project name here*
+🚀 How to Run
+1️⃣ Clone the Repository
+git clone https://github.com/Hack-for-Infinity/TeamZ.git
+2️⃣ Open the Project
+cd TeamZ
+3️⃣ Load Extension in Chrome
 
-## 👥 Team Members
+Open Google Chrome
+Go to:
+chrome://extensions
+Enable Developer Mode
+Click Load Unpacked
+Select the project folder
+4️⃣ Use the Extension
+Open any website
+Click the extension icon
+Activate features like:
+Bionic Reading
+Focus Mode
+Summarize Page
+Read Aloud
 
-| Name | GitHub Username |
-|------|----------------|
-| ...  | ...             |
-| ...  | ...             |
-
-## ❓ Problem Statement
-
-*What problem are you solving? Who does it affect and why does it matter?*
-
-## 🏗️ System Architecture / Design
-
-*Describe or diagram how your system is structured. What are the main components and how do they interact?*
-
-## 🛠️ Technologies Used
-
-*List the languages, frameworks, libraries, APIs, tools, etc. you used.*
-
-## ⭐ Key Features
-
-*What are the main features of your project?*
-
-## ⚙️ How It Works
-
-*Explain how your solution works, end to end. Walk through the main flow.*
-
-## 🚀 How to Run
-
-*Step-by-step instructions for running your project locally.*
-
-```bash
-# example
-git clone <repo-url>
-cd <project-folder>
-# add your setup/run commands here
-```
+🌍 Impact
+This project improves digital accessibility for people with ADHD and Dyslexia, helping them:
+Read faster
+Focus better
+Reduce cognitive overload
+Access information more easily
+By making the web more readable, we move closer to a more inclusive internet for everyone.
